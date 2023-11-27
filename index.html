@@ -2,209 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="google-adsense-account" content="ca-pub-8703350288701070">
-    <title>Aerodinamica</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-   
-    <link rel="icon" href="ruta/al/tu/favicon.ico" type="image/x-icon">
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/dragon-ball');
 
-<body id="page-top">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8703350288701070"
-     crossorigin="anonymous"></script>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container px-4">
-            <a style="background-image: url(580b57fcd9996e24bc43c325.png); background-repeat: no-repeat; background-size: cover; background-position: center;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#Principios">Principios básicos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Teorema">Teorema</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#venturi">Efecto Venturi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Leyes">Leyes de newton</a></li>
-                </ul>
-            </div>
+
+    * {
+
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        font-family: forte;
+    }
+
+    .title h1 {
+        font-size: 15vmin;
+        position: absolute;
+        font-family: initial;
+    }
+
+    .border {
+        color: #000;
+        text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
+    }
+
+    .wave {
+        color: #09f;
+        animation: shift 3s ease-in-out infinite;
+    }
+
+    @keyframes shift {
+
+        0%,
+        100% {
+            clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }
+
+        50% {
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+
+    }
+
+
+
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 100px;
+    }
+
+    .card {
+        width: 325px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 0.3);
+        overflow: hidden;
+        transition: transform 0.6s ease;
+        top: 200px;
+    }
+
+    .card:hover {
+        transform: translateY(-20px);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    .card-content p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .card-button {
+        display: inline-block;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+
+    }
+</style>
+<div class="title">
+    <h1 class="border">Aerodinamica</h1>
+    <h1 class="wave">Aerodinamica</h1>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <img src="img/imagen6.jpg" alt="">
+        <div class="card-content">
+            <h1>Principios de la Aerodinamica</h1>
+            <p>En este capítulo podremos ver los principios aerodinámicos los cuales nos van a permitir conocer un poco
+                más de por qué un avión puede volar y que actúa sobre este, como el teorema de Bernoulli, efecto
+                Venturi, leyes de newton y mucho más.. </p>
+            <a href="" class="card-button">Leer mas</a>
         </div>
-    </nav>
-    <!-- Header-->
-    <header class="bg-primary bg-gradient text-white" style="background-image: url('logo\ y\ nombre\ PWVKZ.png'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 600px;">
-        <div class="container px-4 text-center">
-            <h1 class="fw-bolder">Bienvenido a la aerodinámica</h1>
-
-            <a class="btn btn-lg btn-light" href="#Principios">¡Comencemos!</a>
+    </div>
+    <div class="card">
+        <img src="img/Imagen7.jpg" alt="">
+        <div class="card-content">
+            <h1>Fisica en la Aerodinamica</h1>
+            <p>en esté capitulo hablamos un poco de energía, trabajo, potencia, sus fórmulas, etc. y como actúa cada una de estas en la aerodinámica. </p>
+            <a href="fisica.html" class="card-button">Leer mas</a>
         </div>
-    </header>
-    <!-- About section-->
-    <section id="Principios">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Principios básicos de la aerodinámica:</h2>
-                    <h3>¿Que es la aerodinámica?</h3>
-                    <p class="lead">La aerodinámica estudia los gases en movimiento, y las reacciones o fuerzas que
-                        están sometidos en el cuerpo, en otras palabras, más sencillas es como se mueve el aire sobre
-                        los objetos.</p>
-
-                    <p>Hay algunas leyes aplicables a cualquier objeto en movimiento a través del aire; sabemos que un
-                        fluido que circula por la superficie de un cuerpo, ejerce una fuerza sobre él, dicha fuerza
-                        aerodinámica tiene dos componentes: la sustanciación que es perpendicular a la dirección del
-                        aire y la resistencia que es paralela a la dirección del aire, Todo esto nos lleva a varios
-                        temas muy importantes que nos explican un poco más cómo actúan estas fuerzas actúan sobre un
-                        avión permitiendo que pueda volar. </p>
-                </div>
-            </div>
+    </div>
+    <div class="card">
+        <img src="Imagen1.jpg" alt="">
+        <div class="card-content">
+            <h1>Principios</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <a href="" class="card-button">Leer mas</a>
         </div>
-    </section>
-    <!-- Services section-->
-    <section class="bg-light" id="Teorema">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Teorema de Bernoulli</h2>
-                    <p class="lead">Para poder comprender este tema primero debemos saber 2 factores muy importantes y
-                        cómo funcionan, que son la presión (P) que es la cantidad de fuerza que actúa sobre un área
-                        específica y la velocidad (V) que es el cambio de posición de un objeto con respecto al tiempo;
-                        estas en el teorema son opuestas pero la suma de ambas debe ser constante, en palabras más
-                        sencillas cualquier liquido o gas que aumente su velocidad, deberá disminuir su presión, o
-                        viceversa, pero siempre su suma permanece constante, como se puede ver en el grafico ( alta
-                        velocidad - baja presión y baja velocidad - alta presión ), se preguntaran porque esto,
-                        recordemos que es porque la presión y la velocidad son opuestas, una aumenta y la otra disminuye
-                        o viceversa
-                        En la aviación un ejemplo muy sencillo, el peso del avión tira hacia abajo de la aeronave y en
-                        contra de esto la fuerza de sustentación lo levanta (sube), otro ejemplo más cotidiano para
-                        entender mejor la información básica de que es el teorema es: en el deporte de natación, el
-                        nadador al introducir las manos en el agua e impulsarse, estas cortan el agua, lo que disminuye
-                        la presión, pero incrementa la propulsión del cuerpo y le genera movimiento al nadador
-                        .</p>
-                    <p>Ahora que conocemos que es el teorema y como funciona en la aviación y en la vida
-                        cotidiana, podemos conocer que más funciones tiene; el teorema de Bernoulli nos describe la ley
-                        de conservación de energía, cuya definición es “en un fluido la energía permanece constante”, el
-                        flujo de aire que va arriba debe ir más veloz con menor presión y abajo menor velocidad con
-                        mayor presión, tal cual como se explicó en el teorema de Bernoulli. La ley de conservación de
-                        energía, maneja 3 tipos, la energía cinética, potencial y de presión, las cuales serán
-                        explicadas a continuación:
-                    <ul>
-                        <li>Energía cinética: es la energía que un objeto tiene debido a su movimiento </li>
+    </div>
+</div>
 
-                        <li>Energía potencial: es la energía almacenada en un objeto debido a su posición </li>
+<body>
 
-                        <li>Energía de presión: energía que un fluido contiene debido a la presión que posee </li>
-                    </ul>
-                    </p>
-                    <p>En la aviación para la sustentación que se genera en el perfil aerodinámico, debe de existir un
-                        desequilibrio de presión, ya que el aire es más bajo en la parte superior que en la inferior; el
-                        aire tiene presión, al fluir con su debida velocidad y densidad, nos genera energía cinética ;
-                        en otras palabras o en otro punto de vista más simple, podemos indicar que un fluido en
-                        movimiento al sumar la presión estática más la dinámica, nos genera una presión total que sería
-                        la constante, donde la velocidad incrementa , la presión estática disminuye o si disminuye la
-                        velocidad, la presión estática aumenta</p>
-                    <h5>Se preguntarán que es presión estática y dinámica:</h5>
-                    <ul>
-                        <li>Presión estática: también conocida como la presión ambiente es la presión barométrica en el
-                            lugar donde está volando la aeronave </li>
-                        <li>Presión dinámica: se evidencia cuando la aeronave está en movimiento y está relacionada con
-                            la energía cinética del fluido. </li>
-                    </ul>
-                    <img src="Imagen1.jpg" alt="">
-                    <p>Como se evidencia en la imagen, al ingresar el viento relativo en la parte superior del perfil
-                        alar tendremos baja presión o sea alta velocidad y en la parte inferior alta presión o sea baja
-                        velocidad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact section-->
-    <section id="venturi">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h3>Esto tan sencillo se resume en tres palabras “teorema de Bernoulli” que también puede
-                        relacionarse con el efecto Venturi, el cual nos dice:</h3>
-                    <h2>Efecto Venturi</h2>
-                    <p>Este se produce cuando un fluido pasa por un estrechamiento de un conducto, cada vez que se va
-                        acercando la velocidad aumenta, mientras que la presión estática disminuye y cuando se aleja la
-                        velocidad disminuye y la presión estática aumenta </p>
-                    <p>Recordemos que la presión estática es la presión en donde se está volando, o sea que si la
-                        aeronave aumenta su velocidad esta disminuye, y si disminuye su velocidad esta aumenta </p>
-                    <p>Más adelante se explicará más a fondo temas como la sustentación, resistencia, perfil alar entre
-                        otro, por el momento continuares hablando de las leyes de newton:</p>
-                    <h3 id="Leyes">Leyes de Newton</h3>
-                    <p>Estas leyes son fundamentales para poder entender el movimiento de los objetos y las fuerzas que
-                        actúan sobre ellas, pero para comprenderlas mejor, debemos conocer los siguientes conceptos los
-                        cuales son relacionados en esta ley:</p>
-                    <ul>
-                        <li>Movimiento: es cuando un objeto se desplaza de un lugar a otro modificando su posición,
-                            ejemplo: al caminar estamos moviéndonos de un lado a otro </li>
-                        <li>Fuerza: es cuando se aplica una acción sobre un objeto que hace que este cambie de posición,
-                            ejemplo: si levanto una caja del piso para colocarla en una silla, esto aplicando una fuerza
-                            para modificar su posición</li>
-                        <li>Aceleración: es cuando un objeto modifica su velocidad el cual lo permite ir más rápido o
-                            lento, ejemplo, al acelerar un vehículo</li>
-                    </ul>
-                    <h3>Dicho esto, podemos explicar una por una las leyes comprendido su funcionabilidad:</h3>
-                    <h4>
-                        <li>Primera ley o ley de la inercia: </li>
-                    </h4>
-                    <p>Esta ley nos indica que todo cuerpo preserva su estado de reposo o movimiento rectilíneo a no ser
-                        que se le aplique una fuerza que cambie su estado; al escuchar esto suena un poco complejo pero
-                        lo que nos quiere decir es que un cuerpo no va a poder cambiar su posición inicial, si no le
-                        aplicamos una fuerza, un ejemplo muy sencillo seria al encender la aeronave, esta va a estar en
-                        su misma posición con bajas revoluciones, pero si se le aplica un poco de potencia el avión
-                        cambia su posición y empieza a rodar.
-                        En la parte inferior podemos ver la imagen con un ejemplo más cotidiano, un hombre con su carro
-                        de mercado en estado de reposo, y al aplicarle fuerza el carro empieza a moverse
-                    </p>
-                    <img src="Imagen2.jpg" alt=""><br><br>
-                    <h4>
-                        <li>Segunda ley o ley fundamental de la dinámica: </li>
-                    </h4>
-                    <p>Técnicamente se dice que cuando una fuerza actúa sobre un objeto este se pondrá en movimiento y
-                        podrá acelerar, desacelerar o variar su trayectoria, matemáticamente seria la relación entre
-                        fuerza y aceleración, recordemos que la aceleración de un objeto es directamente proporcional a
-                        la suma de todas las fuerzas que actúan sobre este y a la ves es inversamente proporcional a la
-                        masa (cantidad de materia que tiene un objeto), Esto puede sonar un poco complejo, pero es muy
-                        sencillo, si yo por ejemplo intento mover un objeto muy pesado, le aplico una fuerza necesaria
-                        para que este pueda acelerar y moverse, y si aplico fuerza a un objeto más liviano mi esfuerzo
-                        será menor y este modificara su estado y se moverá, por eso se dice que la aceleración es
-                        directamente proporcional a la fuerza aplicada e inversamente a la masa por que dependiendo de
-                        la masa ( peso) de un objeto yo aplicare una fuerza necesaria para moverlo y este cambiara su
-                        estado y se moverá dependiendo de mi fuerza aplicada, generándonos la siguiente formula: m X a =
-                        F y como se puede observar en el grafico</p>
-                    <img src="Imagen3.jpg" alt="">
-                    <p>Con toda acción siempre ocurre una reacción igual y contraria o sea que las acciones mutuas de
-                        dos cuerpos siempre serán iguales, pero en dirección opuesta, esta ley lo que nos quiere decir
-                        es que toda acción genera una reacción de igual intensidad, pero en sentido contrario, cada que
-                        un objeto aplique una fuerza sobre otro, este lo va a devolver con la misma fuerza pero en
-                        dirección opuesta, un ejemplo muy sencillo son los cohetes, estos se mueven hacia adelante
-                        expulsando un gas hacia atrás con la misma fuerza a alta velocidad, por ende va a reaccionar en
-                        sentido contrario pero con misma intensidad como vemos en la imagen </p>
-                    <img src="Imagen4.png" alt="">
-                    <img src="Imagen5.png" alt="">
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container px-4">
-            <p class="m-0 text-center text-white">
-            </p>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>
