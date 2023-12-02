@@ -36,7 +36,7 @@ h1 {
 }
 
 h1 span {
-	background: #2600ff;
+	background: #03ECFF;
 	padding: 0 10px;
 	color: #222222;
 	display: inline-block;
@@ -93,7 +93,7 @@ ol {
 }
 
 .sp-title span {
-	background: #2600ff;
+	background: #03ECFF;
 	padding: 0 10px;
 	color: #222222;
 	display: inline-block;
@@ -130,7 +130,7 @@ ol {
 .section-title h1,
 .section-title h2 {
 	display: inline-block;
-	background:  #2600ff;
+	background:  #03ECFF;
 	padding: 0 20px;
 	margin-bottom: 0;
 	font-size: 60px;
@@ -242,8 +242,8 @@ ol {
 }
 
 .site-btn.sb-solid-color {
-	background:  #2600ff;
-	border-color:  #2600ff;
+	background:  #03ECFF;
+	border-color:  #03ECFF;
 }
 
 .site-btn.sb-solid-color:after,
@@ -254,12 +254,12 @@ ol {
 .site-btn.sb-solid-dark {
 	background: #222;
 	border-color: #222;
-	color:  #2600ff;
+	color:  #03ECFF;
 }
 
 .site-btn.sb-solid-dark:after,
 .site-btn.sb-solid-dark:before {
-	background:  #2600ff;
+	background:  #03ECFF;
 }
 
 .element {
@@ -284,7 +284,7 @@ ol {
 }
 
 .accordion-area .panel-header.active {
-	background:  #2600ff;
+	background:  #03ECFF;
 }
 
 .accordion-area .panel-header.active .panel-link:after {
@@ -301,7 +301,7 @@ ol {
 	top: 0;
 	height: 100%;
 	width: 50px;
-	background: #2600ff;
+	background: #03ECFF;
 	border: none;
 	cursor: pointer;
 }
@@ -346,7 +346,7 @@ ol {
 }
 
 .tab-element .nav-tabs .nav-link.active {
-	background:  #2600ff;
+	background:  #03ECFF;
 }
 
 .tab-element .nav-tabs .nav-link.active,
@@ -452,7 +452,7 @@ ol {
 	float: right;
 	display: inline-block;
 	padding: 5px 10px;
-	background: #2600ff;
+	background: #03ECFF;
 	font-weight: 700;
 	letter-spacing: 1px;
 	margin-top: 30px;
@@ -495,7 +495,7 @@ ol {
 	left: 50%;
 	margin-left: 1px;
 	top: 0;
-	background:  #2600ff;
+	background:  #03ECFF;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
@@ -545,7 +545,7 @@ ol {
 }
 
 .social-links a:hover {
-	color:  #2600ff;
+	color:  #03ECFF;
 }
 
 .hero-right-text {
@@ -598,7 +598,7 @@ ol {
 
 .hero-slider .owl-nav .owl-prev:hover,
 .hero-slider .owl-nav .owl-next:hover {
-	color:  #2600ff;
+	color:  #03ECFF;
 }
 
 .hero-slider .owl-nav .owl-prev i {
@@ -654,9 +654,9 @@ ol {
 	content: "";
 	height: calc(100% + 50px);
 	width: 330px;
-	border-top: 150px solid  #2600ff;
-	border-left: 150px solid  #2600ff;
-	border-bottom: 90px solid  #2600ff;
+	border-top: 150px solid  #03ECFF;
+	border-left: 150px solid  #03ECFF;
+	border-bottom: 90px solid  #03ECFF;
 	top: 0;
 	left: 0;
 	opacity: 0.73;
@@ -742,7 +742,7 @@ ol {
 }
 
 .service-box:hover .sb-icon {
-	background-color: #2600ff;
+	background-color: #03ECFF;
 }
 
 .service-box:hover .sb-icon .sb-img-icon {
@@ -754,10 +754,7 @@ ol {
 	opacity: 1;
 }
 
-.service-box:hover .readmore {
-	background-color:  #2600ff;
-	padding: 2px 10px;
-}
+
 
 /*----------------------------------------*/
 /*  CTA Section CSS
@@ -866,7 +863,7 @@ ol {
 }
 
 .milestone:hover:after {
-	background:  #2600ff;
+	background:  #fff;
 }
 
 /*----------------------------------------*/
@@ -1103,7 +1100,7 @@ ol {
 
 .page-header-section .header-title {
 	font-size: 82px;
-	color: #fff;
+	color: #000000;
 }
 
 .page-header-section .header-title span {
@@ -1697,8 +1694,8 @@ ol {
 
 .portfolio-filter li.active {
 	text-decoration: underline;
-	-webkit-text-decoration-color: #2046f2;
-	        text-decoration-color: #2046f2;
+	-webkit-text-decoration-color: #000000;
+	        text-decoration-color: #000000;
 }
 
 .portfolio-warp {
@@ -1826,9 +1823,10 @@ ol {
 		line-height: 60px;
 	}
 	.slide-content:after {
-		border-top: 100px solid #2600ff;
-		border-left: 100px solid #2600ff;
-		border-bottom: 60px solid #2600ff;
+		border-top: 100px solid #03ECFF;
+		border-left: 100px solid #03ECFF;
+		border-bottom: 60px solid #03ECFF;
+
 	}
 	.hero-slider .owl-nav {
 		left: 170px;
@@ -2069,7 +2067,7 @@ ol {
 		padding: 20px 30px 30px;
 	}
 	.header-area {
-		background: #121212;
+		background: #000000;
 		padding-right: 66px;
 	}
 	.nav-menu {
@@ -2111,7 +2109,7 @@ ol {
 	font-size: 3em;
 	position: relative;
 	text-align: center;
-	background-color: black;
+	background-color: #03ECFF;
   }
   
   .texto-con-imagen span {
@@ -2126,7 +2124,7 @@ ol {
   }
 
   .negro{
-	background-color: #000;
+	background-color: #B2FA72;
   }
 
 .centrar{
@@ -2135,6 +2133,9 @@ ol {
 	align-items: center;
 	
 }
+
+
+
   
 
   

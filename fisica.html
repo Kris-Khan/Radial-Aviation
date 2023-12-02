@@ -10,10 +10,188 @@
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css" />
-
 </head>
 
 <body>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat Alternates', sans-serif;
+		}
+
+		body {
+			background-color: #fff;
+		}
+
+		.capa {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0);
+			z-index: -1;
+			top: 0;
+			left: 0;
+		}
+
+		/*Estilos para el encabezado*/
+		.header {
+			width: 100%;
+			height: 100px;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.container {
+			width: 90%;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.container .btn-menu,
+		.logo {
+			float: left;
+			line-height: 100px;
+		}
+
+		.container .btn-menu label {
+			color: #000000;
+			font-size: 25px;
+			cursor: pointer;
+		}
+
+		.logo h1 {
+			color: #000000;
+			font-weight: 400;
+			font-size: 22px;
+			margin-left: 10px;
+		}
+
+		.container .menu {
+			float: right;
+			line-height: 100px;
+		}
+
+		.container .menu a {
+			display: inline-block;
+			padding: 15px;
+			line-height: normal;
+			text-decoration: none;
+			color: #000000;
+			transition: all 0.3s ease;
+			border-bottom: 2px solid transparent;
+			font-size: 15px;
+			margin-right: 5px;
+		}
+
+		.container .menu a:hover {
+			border-bottom: 2px solid #000000;
+			padding-bottom: 5px;
+		}
+
+		/*Fin de Estilos para el encabezado*/
+
+		/*Menù lateral*/
+		#btn-menu {
+			display: none;
+		}
+
+		.container-menu {
+			position: absolute;
+			background: rgba(0, 0, 0, 0);
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			transition: all 500ms ease;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#btn-menu:checked~.container-menu {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.cont-menu {
+			width: 100%;
+			max-width: 250px;
+			background: #000000;
+			height: 100vh;
+			position: relative;
+			transition: all 500ms ease;
+			transform: translateX(-100%);
+		}
+
+		#btn-menu:checked~.container-menu .cont-menu {
+			transform: translateX(0%);
+		}
+
+		.cont-menu nav {
+			transform: translateY(15%);
+		}
+
+		.cont-menu nav a {
+			display: block;
+			text-decoration: none;
+			padding: 20px;
+			color: #ffffff;
+			border-left: 5px solid transparent;
+			transition: all 400ms ease;
+		}
+
+		.cont-menu nav a:hover {
+			border-left: 5px solid #c7c7c7;
+			background: #1f1f1f;
+		}
+
+		.cont-menu label {
+			position: absolute;
+			right: 5px;
+			top: 10px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+		}
+
+		/*Fin de Menù lateral*/
+	</style>
+
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			
+			<nav class="menu">
+				<a href="#">Inicio</a>
+				<a href="#">Nosotros</a>
+				<a href="#">Blog</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+	<!--	--------------->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="#">Portafolio</a>
+				<a href="#">Servicios</a>
+				<a href="#">Suscribirse</a>
+				<a href="#">Facebook</a>
+				<a href="#">Youtube</a>
+				<a href="#">Instagram</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+
 	<section class="intro-section pt100 pb50">
 		<div class="container">
 			<div class="row">
@@ -26,7 +204,7 @@
 						y trasformaciones de la energía</a>
 				</div>
 				<div class="col-lg-5 pt-4">
-					<img src="img/u.jpg" alt="">
+					<img src="img/F6.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -37,7 +215,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
-					<h2 class="sp-title">Formas y trasformaciones de la <span>energía:</span></h2>
+					<h2 class="sp-title">Formas y transformaciones de la <span>energía:</span></h2>
 					<p>Antes de empezar a hablar sobre dicho tema recordemos que la energía, es la capacidad de
 						trasformar su estado e incluso su es la capacidad para realizar un trabajo, esta interviene en
 						los cambios más comunes del universo, nos permite calentar, iluminar, mover e incluso nos ayuda
@@ -60,7 +238,7 @@
 	<br>
 	<br>
 
-	<div class="negro">
+	<div class="negro" style="background-color: #03ECFF;">
 		<div class="service-box-section spad set-bg" data-setbg="img/service-bg.jpg">
 			<h1 class="texto-con-imagen"><span>La energía se puede trasformar de muchas formas, las cuales son:</span>
 			</h1>
@@ -68,7 +246,7 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-6">
 						<div class="solid-service-box">
-							<h2><img src="img/cta-img.jpg" alt=""></h2>
+							<h2><img src="img/F2.jpeg" alt=""></h2>
 							<h3>Eléctrica</h3>
 							<p>Esta consiste en el movimiento de los electrones (partícula con carga negativa) entre dos
 								puntos cuando hay diferencia de potencias entre ellos y esto nos genera la corriente
@@ -79,7 +257,7 @@
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="solid-service-box">
-							<h2><img src="img/us.jpg"></h2>
+							<h2><img src="img/F3.jpeg"></h2>
 							<h3>Nuclear</h3>
 							<p>Esta energía se libera desde el núcleo o parte central de los átomos (parte de la materia
 								más pequeña) que consta de protones (partícula con carga positiva) y neutrones
@@ -89,7 +267,7 @@
 					</div>
 					<div class="col-lg-4 col-md-12">
 						<div class="solid-service-box">
-							<h2><img src="img/l.jpg" alt=""></h2>
+							<h2><img src="img/F4.jpeg" alt=""></h2>
 							<h3>Química</h3>
 							<p>Es aquella que se almacena en forma de compuesto químico en un portador de energía, esta
 								se
@@ -112,7 +290,7 @@
 						transforman la energía, ahora hablaremos del trabajo:</h4>
 				</div>
 				<div class="col-lg-5 pt-4">
-					<img src="img/baki.png" alt="">
+					<img src="img/F10.avif" alt="">
 				</div>
 			</div>
 		</div>
@@ -123,7 +301,7 @@
 						<div class="service-box">
 							<div class="sb-icon">
 								<div class="sb-img-icon">
-									<img src="img/goku.png" alt="">
+									<img src="img/F9.png" alt="">
 								</div>
 							</div>
 							<h3>Trabajo</h3>
@@ -137,7 +315,7 @@
 						<div class="service-box">
 							<div class="sb-icon">
 								<div class="sb-img-icon">
-									<img src="img/icon/dark/2.png" alt="">
+									<img src="img/potencia.webp" alt="">
 								</div>
 							</div>
 							<h3>Potencia</h3>
@@ -148,7 +326,7 @@
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="service-box">
-							<img src="img/rick.png" alt="">
+							<img src="img/F12.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -161,7 +339,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
-					<h2 class="sp-title">Trabajo y <span>Potencia 2</span></h2>
+					<h2 class="sp-title">Formula General y<span>Rendimiento</span></h2>
 					<p>Dependiendo del objeto, se valida si requiere más o menos esfuerzo y tiempo, esta se mide en
 						watios y relacionado con el trabajo un watio es la potencia necesaria para hacer un trabajo de
 						un julio durante un segundo
@@ -196,7 +374,7 @@
 					<div class="service-box">
 						<div class="sb-icon">
 							<div class="sb-img-icon">
-								<img src="img/bloodborne.png" alt="">
+								<img src="img/F13.png" alt="">
 							</div>
 						</div>
 						<h3>Mecánica</h3>
@@ -208,25 +386,26 @@
 					<div class="service-box">
 						<div class="sb-icon">
 							<div class="sb-img-icon">
-								<img src="img/icon/dark/2.png" alt="">
+								<img src="img/F14.png" alt="">
 							</div>
 						</div>
 						<h3>Cinética</h3>
-						<p>Está asociada a la energía producida por un movimiento dependiendo de la masa y la velocidad.</p>
+						<p>Está asociada a la energía producida por un movimiento dependiendo de la masa y la velocidad.
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="service-box">
 						<div class="sb-icon">
 							<div class="sb-img-icon">
-								<img src="img/icon/dark/3.png" alt="">
+								<img src="img/F15.png" alt="">
 							</div>
 						</div>
 						<h3>Potencial</h3>
 						<p>está asociada a la localización de un cuerpo dentro de un campo de fuerzas o la existencia de
 							una fuerza en su interior, en palabras más sencillas es la energía almacenada en un objeto
 							debido a su posición.</p>
-					
+
 					</div>
 				</div>
 			</div>
