@@ -630,7 +630,7 @@ ol {
 
 .slide-num-holder span {
 	font-size: 48px;
-	color:  #2600ff;
+	color:  #03ECFF;
 	position: relative;
 	top: -10px;
 	right: -10px;
@@ -780,7 +780,7 @@ ol {
 	width: 50%;
 	height: 100%;
 	left: 0;
-	background-image: url("../img/cta-img.jpg");
+	background-image: url("../img/LATAM\ HISTORIA\ DE\ INSTAGRAM\ EL\ CIELO\ NOS\ HABLA\ VERDE.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -889,7 +889,7 @@ ol {
 }
 
 .projects-filter-nav li.btn-active {
-	background:  #2600ff;
+	background:  #03ECFF;
 	color: #222222;
 }
 
@@ -932,7 +932,7 @@ ol {
 }
 
 .projects-slider .single-project .project-content p {
-	color:  #2600ff;
+	color:  #03ECFF;
 	font-weight: 500;
 	position: relative;
 	top: 40px;
@@ -945,7 +945,7 @@ ol {
 	position: absolute;
 	right: 50px;
 	bottom: 30px;
-	background:  #2600ff;
+	background:  #03ECFF;
 	font-size: 14px;
 	font-weight: 700;
 	color: #222;
@@ -998,7 +998,7 @@ ol {
 
 .projects-slider .owl-nav .owl-prev:hover,
 .projects-slider .owl-nav .owl-next:hover {
-	background: #2600ff;
+	background: #03ECFF;
 }
 
 .projects-slider .owl-nav .owl-prev i {
@@ -1087,7 +1087,7 @@ ol {
 }
 
 .footer-item ul li a:hover {
-	background: #2600ff;
+	background: #03ECFF;
 }
 
 /*----------------------------------------*/
@@ -1105,7 +1105,7 @@ ol {
 
 .page-header-section .header-title span {
 	background: none;
-	color: #2600ff;
+	color: #03ECFF;
 }
 
 /*----------------------------------------*/
@@ -1148,7 +1148,7 @@ ol {
 }
 
 .testimonials-section .qut {
-	color: #2600ff;
+	color: #03ECFF;
 	font-size: 36px;
 	margin-bottom: 20px;
 }
@@ -1162,7 +1162,7 @@ ol {
 .ts-item h4 {
 	font-size: 15px;
 	font-weight: 400;
-	color: #2600ff;
+	color:  #03ECFF;
 	margin-bottom: 0;
 }
 
@@ -1209,7 +1209,7 @@ ol {
 }
 
 .team-member:hover .member-info {
-	background: #2600ff;
+	background: #03ECFF;
 	-webkit-box-shadow: 0px 0px 0px rgba(114, 114, 114, 0.21);
 	        box-shadow: 0px 0px 0px rgba(114, 114, 114, 0.21);
 }
@@ -1270,7 +1270,7 @@ ol {
 }
 
 .service-slider .owl-dots .owl-dot.active {
-	background: #2600ff;
+	background: #03ECFF;
 }
 
 .service-text h2 {
@@ -1335,7 +1335,7 @@ ol {
 }
 
 .solid-service-box:hover {
-	background: #2600ff;
+	background: #03ECFF;
 }
 
 .solid-service-box:hover h2 {
@@ -1390,7 +1390,7 @@ ol {
 	font-weight: 700;
 	color: #222;
 	display: inline-block;
-	background: #2600ff;
+	background: #03ECFF;
 	padding: 4px 15px;
 	margin-bottom: 20px;
 }
@@ -1423,7 +1423,7 @@ ol {
 }
 
 .blog-post:hover .thumb:after {
-	background: #2600ff;
+	background: #03ECFF;
 }
 
 .pagination {
@@ -1441,7 +1441,7 @@ ol {
 
 .pagination a.active {
 	font-size: 48px;
-	color: #2600ff;
+	color: #03ECFF;
 }
 
 .search {
@@ -1508,7 +1508,7 @@ ol {
 }
 
 .widget-area ul li a:hover {
-	background: #2600ff;
+	background: #03ECFF;
 	color: #222;
 }
 
@@ -1584,7 +1584,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #2600ff;
+	background: #03ECFF;;
 	opacity: 0;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -2133,6 +2133,7 @@ ol {
 	align-items: center;
 	
 }
+
 
 
 

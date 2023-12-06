@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Menù Lateral con Css</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
@@ -33,7 +38,7 @@
     .header {
         width: 100%;
         height: 100px;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
     }
@@ -93,20 +98,29 @@
     }
 
     .container-menu {
-        position: absolute;
-        background: rgba(0, 0, 0, 0);
+        position: fixed;
+        /* Cambiado a fixed para cubrir toda la pantalla */
+        background: rgba(0, 0, 0, 0.5);
+        /* Cambiado el fondo a un color semi-transparente */
         width: 100%;
-        height: 100vh;
+        /* Cubrir toda la pantalla horizontalmente */
+        height: 100%;
+        /* Cubrir toda la pantalla verticalmente */
         top: 0;
         left: 0;
         transition: all 500ms ease;
         opacity: 0;
         visibility: hidden;
+        z-index: 999;
+        /* Para asegurarse de que esté en la parte superior */
     }
+
+
 
     #btn-menu:checked~.container-menu {
         opacity: 1;
         visibility: visible;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .cont-menu {
@@ -150,6 +164,91 @@
         font-size: 18px;
     }
 
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 9000px #03ECFF;
+    }
+
+    ol,
+    ul {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 50px #03ECFF;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #777;
+        font-size: 0.9em;
+    }
+
+    .tittle {
+        font-size: 2.5em;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: #1f1f1f;
+    }
+
+    .tittle h5 {
+        color: #fff;
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .titulo span {
+        background: #03ECFF;
+        padding: 0 10px;
+        color: #222222;
+        display: inline-block;
+    }
+
     /*Fin de Menù lateral*/
 </style>
 
@@ -159,11 +258,8 @@
             <div class="btn-menu">
                 <label for="btn-menu">☰</label>
             </div>
-            <div class="logo">
-                <h1>Logotipo</h1>
-            </div>
             <nav class="menu">
-                <a href="#">Inicio</a>
+                <a href="fisica.html">Fisica</a>
                 <a href="#">Nosotros</a>
                 <a href="#">Blog</a>
                 <a href="#">Contacto</a>
@@ -186,7 +282,267 @@
             <label for="btn-menu">✖️</label>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br>
+    <section class="intro-section pt100 pb50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 intro-text mb-5 mb-lg-0">
+                    <h2 class="sp-title">Principios <span>Aerodinámicos</span></h2>
+                    <h3>Que es la aerodinámica</h3>
+                    <p>La aerodinámica estudia los gases en movimiento, y las reacciones o fuerzas que están sometidos
+                        en el cuerpo, en otras palabras, más sencillas es como se mueve el aire sobre los objetos.
+                        Hay algunas leyes aplicables a cualquier objeto en movimiento a través del aire; sabemos que un
+                        fluido que circula por la superficie de un cuerpo, ejerce una fuerza sobre él, dicha fuerza
+                        aerodinámica tiene dos componentes: la sustanciación que es perpendicular a la dirección del
+                        aire y la resistencia que es paralela a la dirección del aire, Todo esto nos lleva a varios
+                        temas muy importantes que nos explican un poco más cómo actúan estas fuerzas actúan sobre un
+                        avión permitiendo que pueda volar. </p>
+                    <a href="#" class="site-btn sb-dark" style="font-family: 'Courier New', Courier, monospace;">
+                        Empezaremos con el teorema de Bernoulli</a>
+                </div>
+                <div class="col-lg-5 pt-4">
+                    <img src="img/P1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <header>
+            <h1>Teorema de Bernoulli</h1>
+        </header>
+        <section class="content">
+            <p>Para poder comprender este tema primero debemos saber 2 factores muy importantes y cómo funcionan, que
+                son la presión (P) que es la cantidad de fuerza que actúa sobre un área específica y la velocidad (V)
+                que es el cambio de posición
+                de un objeto con respecto al tiempo; estas en el teorema son opuestas pero la suma de ambas debe ser
+                constante, en palabras más sencillas cualquier liquido o gas que aumente su velocidad, deberá disminuir
+                su presión, o viceversa, pero siempre su suma permanece constante, como se puede ver en el grafico (
+                alta velocidad – baja presión y baja velocidad - alta presión ), se preguntaran porque esto, recordemos
+                que es porque la presión y la velocidad son opuestas, una aumenta y la otra disminuye o viceversa
+            </p>
+            <ol>
+                <li>Presión (P): La presión es la cantidad de fuerza que actúa sobre un área específica.</li>
+                <li>Velocidad (V): La velocidad representa el cambio de posición de un objeto en relación con el tiempo.
+                </li>
+            </ol>
+            <div class="image-container">
+                <img src="img/P2.jpg" alt="Ejemplo de Teorema de Bernoulli">
+            </div>
+            <p>En la aviación un ejemplo muy sencillo, el peso del avión tira hacia abajo de la aeronave y en contra de
+                esto la fuerza de sustentación lo levanta (sube), otro ejemplo más cotidiano para entender mejor la
+                información básica de que es el teorema es: en el deporte de natación, el nadador al introducir las
+                manos en el agua e impulsarse, estas cortan el agua, lo que disminuye la presión, pero incrementa la
+                propulsión del cuerpo y le genera movimiento al nadador </p>
+
+        </section>
+    </div>
+    <br><br><br><br><br><br>
+
+    <div class="tittle">
+        <h5><b>Ahora que conocemos que es el teorema y como funciona en la aviación y en la vida cotidiana, podemos
+                conocer
+                que más funciones tiene; el teorema de Bernoulli nos describe la ley de conservación de energía, cuya
+                definición es “en un fluido la energía permanece constante”, el flujo de aire que va arriba debe ir más
+                veloz con menor presión y abajo menor velocidad con mayor presión, tal cual como se explicó en el
+                teorema de
+                Bernoulli </b></h5>
+    </div>
+
+    <section class="intro-section pt100 pb50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 intro-text mb-5 mb-lg-0">
+                    <h4 class="titulo">La ley de conservación de energía, maneja 3 tipos, <span>la energía cinética,
+                            potencial y de presión, las cuales serán explicadas a continuación:</span></h4>
+                    <ul>
+                        <li>Energía cinética: es la energía que un objeto tiene debido a su movimiento. </li>
+                        <li>Energía potencial: es la energía almacenada en un objeto debido a su posición. </li>
+                        <li>Energía de presión: energía que un fluido contiene debido a la presión que posee. </li>
+                    </ul> <br>
+                    <p>En la aviación para la sustentación que se genera en el perfil aerodinámico, debe de existir un
+                        desequilibrio de presión, ya que el aire es más bajo en la parte superior que en la inferior; el
+                        aire tiene presión, al fluir con su debida velocidad y densidad, nos genera energía cinética ;
+                        en otras palabras o en otro punto de vista más simple, podemos indicar que un fluido en
+                        movimiento al sumar la presión estática más la dinámica, nos genera una presión total que sería
+                        la constante, donde la velocidad incrementa , la presión estática disminuye o si disminuye la
+                        velocidad, la presión estática aumenta</p>
+
+                </div>
+                <div class="col-lg-5 pt-4">
+                    <img src="img/cta-img3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section spad">
+        <div class="container">
+            <div class="section-title">
+                <h1 style="font-family: 'Times New Roman', Times, serif;">Se preguntarán ¿Que es presión estática y
+                    dinámica?</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="sb-icon">
+                            <div class="sb-img-icon">
+                                <img src="img/F13.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Presión estática</h3>
+                        <p>También conocida como la presión ambiente es la presión barométrica en el lugar donde está
+                            volando la aeronave </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="sb-icon">
+                            <div class="sb-img-icon">
+                                <img src="img/F14.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Presión dinámica</h3>
+                        <p>Se evidencia cuando la aeronave está en movimiento y está relacionada con la energía cinética
+                            del fluido.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <img src="img/baki.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <header>
+            <h2>¿Que es presión estática y dinámica?</h2>
+        </header>
+        <section class="content">
+            <ul>
+                <li>Presión estática: también conocida como la presión ambiente es la presión barométrica en el lugar
+                    donde está volando la aeronave . </li>
+                <li>Presión dinámica: se evidencia cuando la aeronave está en movimiento y está relacionada con la
+                    energía cinética del fluido. </li>
+            </ul>
+            <p>Como se evidencia en la imagen, al ingresar el viento relativo en la parte superior del perfil alar
+                tendremos baja presión o sea alta velocidad y en la parte inferior alta presión o sea baja velocidad.
+            </p>
+            <div class="image-container">
+                <img src="img/Goku.jpg" alt="Ejemplo de Teorema de Bernoulli">
+            </div>
+            <p>Como se evidencia en la imagen, al ingresar el viento relativo en la parte superior del perfil alar
+                tendremos baja presión o sea alta velocidad y en la parte inferior alta presión o sea baja velocidad.
+            </p>
+            <p>Esto tan sencillo se resume en tres palabras “teorema de Bernoulli” que también puede relacionarse con el
+                efecto Venturi</p>
+
+        </section>
+    </div>
+    <br><br><br><br><br><br>
+
+    <section class="cta-section pt100 pb50">
+        <div class="cta-image-box"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
+                    <h2 class="sp-title">Efecto<span>Venturi:</span></h2>
+                    <p>este se produce cuando un fluido pasa por un estrechamiento de un conducto, cada vez que se va
+                        acercando la velocidad aumenta, mientras que la presión estática disminuye y cuando se aleja la
+                        velocidad disminuye y la presión estática aumenta . </p>
+                    <p>Recordemos que la presión estática es la presión en donde se está volando, o sea que si la
+                        aeronave aumenta su velocidad esta disminuye, y si disminuye su velocidad esta aumenta
+                        Más adelante se explicará más a fondo temas como la sustentación, resistencia, perfil alar entre
+                        otro, por el momento continuares hablando de las leyes de newton
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section pt100 pb50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 intro-text mb-5 mb-lg-0">
+                    <h2 class="sp-title">Leyes de<span>Newton </span></h2>
+                    <ul>
+                        <li>Movimiento: es cuando un objeto se desplaza de un lugar a otro modificando su posición,
+                            ejemplo: al caminar estamos moviéndonos de un lado a otro . </li>
+                        <li>Fuerza: es cuando se aplica una acción sobre un objeto que hace que este cambie de
+                            posición, ejemplo: si levanto una caja del piso para colocarla en una silla, esto aplicando
+                            una fuerza para modificar su posición . </li>
+                        <li>Aceleración: es cuando un objeto modifica su velocidad el cual lo permite ir más rápido o
+                            lento, ejemplo, al acelerar un vehículo. </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 pt-4">
+                    <img src="img/P1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="negro" style="background-color: #03ECFF;">
+        <div class="service-box-section spad set-bg" data-setbg="img/service-bg.jpg">
+            <h1 class="texto-con-imagen"><span>La energía se puede trasformar de muchas formas, las cuales son:</span>
+            </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="solid-service-box">
+                            <h2><img src="img/F2.jpeg" alt=""></h2>
+                            <h3>Primera ley o ley de la inercia</h3>
+                            <p>Esta ley nos indica que todo cuerpo preserva su estado de reposo o movimiento rectilíneo
+                                a no ser que se le aplique una fuerza que cambie su estado; al escuchar esto suena un
+                                poco complejo pero lo que nos quiere decir es que un cuerpo no va a poder cambiar su
+                                posición inicial, si no le aplicamos una fuerza, un ejemplo muy sencillo seria al
+                                encender la aeronave, esta va a estar en su misma posición con bajas revoluciones, pero
+                                si se le aplica un poco de potencia el avión cambia su posición y empieza a rodar. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="solid-service-box">
+                            <h2><img src="img/F3.jpeg"></h2>
+                            <h3>Segunda ley o ley fundamental de la dinámica</h3>
+                            <p>Técnicamente se dice que cuando una fuerza actúa sobre un objeto este se pondrá en
+                                movimiento y podrá acelerar, desacelerar o variar su trayectoria, matemáticamente seria
+                                la relación entre fuerza y aceleración, recordemos que la aceleración de un objeto es
+                                directamente proporcional a la suma de todas las fuerzas que actúan sobre este y a la
+                                ves es inversamente proporcional a la masa (cantidad de materia que tiene un objeto).
+                            <p>Esto puede sonar un poco complejo, pero es muy sencillo, si yo por ejemplo intento mover
+                                un objeto muy pesado, le aplico una fuerza necesaria para que este pueda acelerar y
+                                moverse, y si aplico fuerza a un objeto más liviano mi esfuerzo será menor y este
+                                modificara su estado y se moverá, por eso se dice que la aceleración es directamente
+                                proporcional a la fuerza aplicada e inversamente a la masa por que dependiendo de la
+                                masa ( peso) de un objeto yo aplicare una fuerza necesaria para moverlo y este cambiara
+                                su estado y se moverá dependiendo de mi fuerza aplicada, generándonos la siguiente
+                                formula: mXa=F </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="solid-service-box">
+                            <h2><img src="img/F4.jpeg" alt=""></h2>
+                            <h3>Tercera ley o principio de acción y reacción</h3>
+                            <p>Con toda acción siempre ocurre una reacción igual y contraria o sea que las acciones
+                                mutuas de dos cuerpos siempre serán iguales, pero en dirección opuesta, esta ley lo que
+                                nos quiere decir es que toda acción genera una reacción de igual intensidad, pero en
+                                sentido contrario, cada que un objeto aplique una fuerza sobre otro, este lo va a
+                                devolver con la misma fuerza pero en dirección opuesta, un ejemplo muy sencillo son los
+                                cohetes, estos se mueven hacia adelante expulsando un gas hacia atrás con la misma
+                                fuerza a alta velocidad, por ende va a reaccionar en sentido contrario pero con misma
+                                intensidad como vemos en la imagen .</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
